@@ -1,0 +1,36 @@
+.flag {
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #000;
+}
+
+.red {
+  height: 50%;
+  background: linear-gradient(0deg, #ff0000, #cc0000);
+  animation: wave 3s ease-in-out infinite;
+}
+
+.white {
+  height: 50%;
+  background: linear-gradient(0deg, #ffffff, #f0f0f0);
+  animation: wave 3s ease-in-out infinite;
+  animation-delay: 0.15s;
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: rotate(0deg) translateX(0);
+  }
+  25% {
+    transform: rotate(1deg) translateX(-5px);
+  }
+  50% {
+    transform: rotate(0deg) translateX(5px);
+  }
+  75% {
+    transform: rotate(-1deg) translateX(-3px);
+  }
+}
